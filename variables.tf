@@ -12,7 +12,7 @@ EOT
   type = map(object({
     cdn_frontdoor_profile_id = string
     name                     = string
-    enabled                  = optional(bool, true)
+    enabled                  = optional(bool) # Default: true
     tags                     = optional(map(string))
   }))
 }
