@@ -12,7 +12,7 @@ EOT
   type = map(object({
     cdn_frontdoor_profile_id = string
     name                     = string
-    enabled                  = optional(bool) # Default: true
+    enabled                  = optional(bool)
     tags                     = optional(map(string))
   }))
   # --- Unconfirmed validation candidates, derived from azurerm_cdn_frontdoor_endpoint's provider source ---
